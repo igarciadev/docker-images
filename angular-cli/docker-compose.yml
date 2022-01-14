@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    image: angular-cli:7.3.10
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+      - /dev/bus/usb:/dev/bus/usb
+    command: sleep infinity
+    privileged: true
