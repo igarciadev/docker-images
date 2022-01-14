@@ -1,10 +1,14 @@
 version: '3'
 services:
   app:
-    image: angular-cli:7.3.10
+    image: "angular-cli:${ANGULAR_CLI_VERSION}"
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NODE_VERSION: "${NODE_VERSION}"
+        NPM_VERSION: "${NPM_VERSION}"
+        ANGULAR_CLI_VERSION: "${ANGULAR_CLI_VERSION}"
     volumes:
       - ..:/workspace:cached
       - /dev/bus/usb:/dev/bus/usb

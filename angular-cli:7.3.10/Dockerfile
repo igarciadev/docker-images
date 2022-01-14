@@ -1,4 +1,5 @@
-FROM node:16.13.1-stretch
+ARG NODE_VERSION
+FROM node:$NODE_VERSION
 
 # Configure apt
 ENV DEBIAN_FRONTEND=noninteractive
@@ -21,11 +22,13 @@ RUN rm -rf /opt/yarn-* \
 
 # Install NPM
 # npm versions: https://www.npmjs.com/package/npm?activeTab=versions
-RUN npm install -g npm@8.3.0
+ARG NPM_VERSION
+RUN npm install -g npm@$NPM_VERSION
 
 # Install Angular CLI
 # npm versions: https://www.npmjs.com/package/@angular/cli?activeTab=versions
-RUN npm install -g @angular/cli@7.3.10
+ARG ANGULAR_CLI_VERSION
+RUN npm install -g @angular/cli@$ANGULAR_CLI_VERSION
 
 # Clean up
 RUN apt-get autoremove -y \
