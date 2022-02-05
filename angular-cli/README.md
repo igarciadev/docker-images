@@ -14,22 +14,23 @@ To build a docker image follow next steps:
 
 1. Clone this repository.
 
-```bash
-git init https://github.com/igarciadev/docker-images.git
-```
+    ```bash
+    git init https://github.com/igarciadev/docker-images.git
+    ```
 
 2. Run the bash script with the version number to create a docker image.
 
-```bash
-./build:x.x.sh
-```
+    ```bash
+    ./build:x.x.sh
+    ```
 
 ## Version compatibility
 
 | Angular CLI version | Angular version | Node.js version | TypeScript version | RxJS version |
 | :- | :- | :- | :- | :- |
-| 7.3.9 | 7.2.x |8.9.x/10.9.x or later minor version | 3.2.x | 6.3.x or later minor version |
+| 7.3.10 | 7.2.x |8.9.x/10.9.x or later minor version | 3.2.x | 6.3.x or later minor version |
 | 8.3.29 | 8.2.x | 10.9.x or later minor version | 3.5.x | 6.4.x or later minor version |
+| 10.0.8 | 10.0.x | 10.13.x/12.11.x or later minor version | 3.9.x | 6.5.x/6.6.x |
 | 12.2.x | 12.2.x | 12.14.x/14.15.x or later minor version | 4.2.x/4.3.x | 6.5.x/6.6.x/7.0.x or later minor version |
 
 ## Reference
