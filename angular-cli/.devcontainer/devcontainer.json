@@ -1,0 +1,59 @@
+{
+    "name": "<project-name>",
+    "image": "angular-cli:<version>",
+    "settings": {
+        "files.watcherExclude": {
+            "**/node_modules/**": true
+        },
+        "editor.rulers": [
+            {
+                "column": 80,
+                "color": "#44444440"
+            },
+            {
+                "column": 100,
+                "color": "#44444460"
+            },
+            {
+                "column": 120,
+                "color": "#44444480"
+            }
+        ],
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnType": false,
+        "editor.formatOnSave": true,
+        "editor.minimap.enabled": false,
+        "workbench.tree.indent": 16,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+    },
+    "extensions": [
+        "hediet.vscode-drawio",
+        "mhutchie.git-graph",
+        "jinsihou.diff-tool",
+        "wayou.vscode-todo-highlight",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "pkief.material-icon-theme",
+        "formulahendry.terminal",
+        "TabNine.tabnine-vscode",
+        "editorconfig.editorconfig",
+        "jebbs.plantuml",
+        "angular.ng-template",
+        "dbaeumer.vscode-eslint",
+        "eg2.vscode-npm-script",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "github.copilot",
+        "johnpapa.angular2",
+        "thekalinga.bootstrap4-vscode",
+        "xabikos.javascriptsnippets",
+        "usernamehw.errorlens"
+    ],
+    "forwardPorts": [
+        4200,
+        9876
+    ]
+}
